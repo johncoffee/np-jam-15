@@ -138,6 +138,10 @@ Prefab:
       propertyPath: near clip plane
       value: .00999999978
       objectReference: {fileID: 0}
+    - target: {fileID: 111018, guid: 8184cd1e34e674d3e8cc335a4a73159a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8184cd1e34e674d3e8cc335a4a73159a, type: 2}
   m_IsPrefabParent: 0
@@ -437,7 +441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1495094134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .159999996, y: 0, z: -1.57000005}
+  m_LocalPosition: {x: .159999996, y: .0480000004, z: -1.57000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2031792262}
@@ -742,7 +746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 111018, guid: 8184cd1e34e674d3e8cc335a4a73159a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8184cd1e34e674d3e8cc335a4a73159a, type: 2}
