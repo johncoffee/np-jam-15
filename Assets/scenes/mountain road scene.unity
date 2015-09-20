@@ -141,7 +141,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 419346, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.25999999
+      value: -1.30900002
       objectReference: {fileID: 0}
     - target: {fileID: 419346, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalPosition.y
@@ -170,38 +170,6 @@ Prefab:
     - target: {fileID: 419346, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: excludeFarPixels
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: distanceFog
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: heightFog
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: heightDensity
-      value: 1.29999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: height
-      value: -.319999993
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467788, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: startDistance
-      value: 1.64999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 11442008, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: max0
-      value: -2.04999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 11442008, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
-      propertyPath: max1
-      value: -.25999999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
