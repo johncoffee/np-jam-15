@@ -304,7 +304,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: f140840b8f4a84603945d499707ef298, type: 2}
+  - {fileID: 2100000, guid: b1b50825035e041238ba0e149b92f03e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -328,7 +328,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: f140840b8f4a84603945d499707ef298, type: 2}
+  - {fileID: 2100000, guid: b1b50825035e041238ba0e149b92f03e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -553,8 +553,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: .998985827, g: 1, b: .926470578, a: 1}
-  m_Intensity: 8
-  m_Range: 10.04
+  m_Intensity: 7.0999999
+  m_Range: 8.23999977
   m_SpotAngle: 81.1399994
   m_CookieSize: 10
   m_Shadows:

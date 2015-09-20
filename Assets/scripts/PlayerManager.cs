@@ -13,12 +13,14 @@ public class PlayerManager : MonoBehaviour
     public GameObject[] disableForPlayerOne;
     public GameObject[] disableForPlayerTwo;
 
+	public Transform p1CamPosition, p2CamPosition, mainCamera;
+
     public Transform steering;
 
     public Transform frontWheel;
 
     public float steeringValue;
-    public float steeringFactor;
+    public float steeringFactor = 0.1f;
 
     public AudioSource voiceOne;
     public AudioSource voiceTwo;
@@ -45,7 +47,10 @@ public class PlayerManager : MonoBehaviour
     }
 
     IEnumerator Start()
-    {
+	{
+		Vector3 camPos = (isPlayerOne) ? p1CamPosition.position : p2CamPosition.position;
+		mainCamera.position = camPos;
+
         yield return new WaitForSeconds(10);
 
         voiceOne.Play();
@@ -61,7 +66,6 @@ public class PlayerManager : MonoBehaviour
         if (steering != null && frontWheel != null)
         {
             float angle = Mathf.DeltaAngle(0, steering.eulerAngles.y) + Mathf.DeltaAngle(0, steering.eulerAngles.z);
-            Debug.Log("STEERING " + angle);
             steeringValue = Mathf.Clamp(angle * steeringFactor, -1, 1);
             frontWheel.localEulerAngles = new Vector3(0, steeringValue * 30, 0);
         }
