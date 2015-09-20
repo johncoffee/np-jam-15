@@ -10,7 +10,7 @@ public class TerrainSpawner : MonoBehaviour {
 
 	public float segmentLength = -1f;
 
-	public GameObject segmentPrefab;
+	GameObject segmentPrefab;
 
 	public List<GameObject> list;
 
@@ -20,6 +20,7 @@ public class TerrainSpawner : MonoBehaviour {
 //		for (var i =0; i < segmentsAhead; i++) {
 //			appendSegment();
 //		}
+		segmentPrefab = list[0];
 	}
 	
 	// Update is called once per frame
