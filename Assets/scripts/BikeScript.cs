@@ -25,7 +25,6 @@ public class BikeScript : MonoBehaviour {
 		transform.position += vel * Time.fixedDeltaTime;
 //		speed = new Vector3( Mathf.Max(speed.x, maxTurningSpeed), speed.y, speed.x);
 		damped = damped * 0.8f + vel.x * 0.2f;
-		Debug.Log(damped);
 		bikeBase.transform.eulerAngles = new Vector3(0, 0, -damped * 20f);
 //		bikeBase.transform.position += new Vector3(1);
 		acc *= 0;
