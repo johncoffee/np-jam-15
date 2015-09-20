@@ -1271,7 +1271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.519999981, y: .99000001, z: -6.0334816}
+  m_LocalPosition: {x: -1.30900002, y: 1.02199996, z: -15.4700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479668}
@@ -1561,7 +1561,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153482}
-  m_LocalRotation: {x: -.674621642, y: .160353288, z: -.133393154, w: .708081126}
+  m_LocalRotation: {x: -.674621582, y: .160353273, z: -.133393139, w: .708081067}
   m_LocalPosition: {x: -.377416998, y: -.530473471, z: -.0134626897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   angle: 0
   x: 3
   y: 6
-  z: 5
+  z: 1
 --- !u!114 &11436834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4161,22 +4161,22 @@ MonoBehaviour:
   enableForPlayerOne: []
   enableForPlayerTwo: []
   disableForPlayerOne:
-  - {fileID: 179778}
-  - {fileID: 153168}
-  disableForPlayerTwo:
   - {fileID: 113026}
   - {fileID: 114628}
-  p1CamPosition: {fileID: 488408}
-  p2CamPosition: {fileID: 436710}
-  mainCamera: {fileID: 461086}
+  disableForPlayerTwo:
+  - {fileID: 179778}
+  - {fileID: 153168}
   steering: {fileID: 452380}
   frontWheel: {fileID: 490526}
   steeringValue: 0
-  steeringFactor: 0
+  steeringFactor: .0199999996
   voiceOne: {fileID: 8205170}
   voiceTwo: {fileID: 8230764}
   p1Shouting: {fileID: 8264254}
   p2Shouting: {fileID: 8295072}
+  p1CamPosition: {fileID: 488408}
+  p2CamPosition: {fileID: 436710}
+  mainCamera: {fileID: 461086}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

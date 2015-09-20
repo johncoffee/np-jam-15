@@ -26,6 +26,9 @@ public class PlayerManager : MonoBehaviour
     public AudioSource p1Shouting;
     public AudioSource p2Shouting;
 
+    public Transform p1CamPosition, p2CamPosition, mainCamera;
+
+
     // Use this for initialization
     void Awake ()
     {
@@ -47,6 +50,10 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        Vector3 camPos = (isPlayerOne) ? p1CamPosition.position : p2CamPosition.position;
+        mainCamera.position = camPos;
+
+
         yield return new WaitForSeconds(10);
 
         voiceOne.Play();
