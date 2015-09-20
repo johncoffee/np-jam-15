@@ -195,7 +195,7 @@ GameObject:
   - 114: {fileID: 11436834}
   m_Layer: 0
   m_Name: camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1271,7 +1271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.30900002, y: 1.02199996, z: -15.4700003}
+  m_LocalPosition: {x: -.519999981, y: .99000001, z: -6.0334816}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479668}
@@ -4168,6 +4168,7 @@ MonoBehaviour:
   - {fileID: 114628}
   p1CamPosition: {fileID: 488408}
   p2CamPosition: {fileID: 436710}
+  mainCamera: {fileID: 461086}
   steering: {fileID: 452380}
   frontWheel: {fileID: 490526}
   steeringValue: 0
