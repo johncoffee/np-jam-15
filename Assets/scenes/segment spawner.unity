@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackingTarget: {fileID: 1891262064}
-  segmentsAhead: 1
+  segmentsAhead: 2
   segmentLength: 16
   segmentPrefab: {fileID: 191952, guid: aaae164fe2de845b280dd0620aad23b7, type: 2}
   list:
