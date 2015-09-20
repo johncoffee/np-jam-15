@@ -10,13 +10,15 @@ public class SpawnTimeLine : TimeLine
 
     public override void Trigger()
     {
-        Instantiate(prefab, (bike != null ? bike.position : Vector3.zero) + offset, Quaternion.identity);
+        var bikeOffset = new Vector3(0, 0, bike != null ? bike.position.z : 0);
+        Instantiate(prefab, bikeOffset + offset, Quaternion.identity);
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere((bike != null ? bike.position : Vector3.zero) + offset, .2f);
-        Gizmos.DrawLine(transform.position, (bike != null ? bike.position : Vector3.zero) + offset);
+        var bikeOffset = new Vector3(0, 0, bike != null ? bike.position.z : 0);
+        Gizmos.DrawWireSphere(bikeOffset + offset, .2f);
+        Gizmos.DrawLine(transform.position, bikeOffset + offset);
     }
 }
