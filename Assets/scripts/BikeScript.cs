@@ -30,15 +30,19 @@ public class BikeScript : MonoBehaviour {
 		acc *= 0;
 	}
 	
-	void Update() {
-		if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > max0) {
-			float inputAcc = -leftRight;
-			acc += Vector3.right * inputAcc * Time.deltaTime;
+	void Update()
+	{
+	    float steering = GetComponent<PlayerManager>().steeringValue;
+		if (steering < 0 && transform.position.x > max0)
+		{
+		    float inputAcc = leftRight*steering;
+            acc += Vector3.right * inputAcc * Time.deltaTime;
 //			accelerate += new Vector3(accelerate.x * 1.2f, 0f ,0f);
 		}
-		else if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < max1) {
-			float inputAcc = leftRight;
-			acc += Vector3.right * inputAcc * Time.deltaTime;
+		else if (steering > 0 && transform.position.x < max1)
+        {
+            float inputAcc = leftRight * steering;
+            acc += Vector3.right * inputAcc * Time.deltaTime;
 //			accelerate += new Vector3(accelerate.x * 1.2f, 0f ,0f);
 		}
 

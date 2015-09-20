@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     public float steeringValue;
     public float steeringFactor;
+    private float softSteering = 0;
 
     public AudioSource voiceOne;
     public AudioSource voiceTwo;
@@ -55,14 +56,16 @@ public class PlayerManager : MonoBehaviour
         voiceTwo.volume = isPlayerOne ? 0 : 1;
     }
 
+
 	// Update is called once per frame
 	void Update ()
     {
         if (steering != null && frontWheel != null)
         {
             float angle = Mathf.DeltaAngle(0, steering.eulerAngles.y) + Mathf.DeltaAngle(0, steering.eulerAngles.z);
-            Debug.Log("STEERING " + angle);
-            steeringValue = Mathf.Clamp(angle * steeringFactor, -1, 1);
+            //Debug.Log("STEERING " + angle);
+            softSteering = softSteering*0.8f + angle*0.2f;
+            steeringValue = Mathf.Clamp(softSteering * steeringFactor, -1, 1);
             frontWheel.localEulerAngles = new Vector3(0, steeringValue * 30, 0);
         }
         
