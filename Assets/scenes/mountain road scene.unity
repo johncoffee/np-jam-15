@@ -180,19 +180,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451944, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -.674621642
+      value: -.674621582
       objectReference: {fileID: 0}
     - target: {fileID: 451944, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .160353288
+      value: .160353273
       objectReference: {fileID: 0}
     - target: {fileID: 451944, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.133393154
+      value: -.133393139
       objectReference: {fileID: 0}
     - target: {fileID: 451944, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .708081126
+      value: .708081067
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd2c035bfe7d4551bea717927e12484, type: 2}

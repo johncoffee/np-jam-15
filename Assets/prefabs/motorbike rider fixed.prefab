@@ -536,7 +536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &147054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,7 +1427,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0223388672, y: 1.01879299, z: .195609093}
+  m_LocalPosition: {x: -.0223388672, y: 1.25899994, z: -.0869999975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479668}
@@ -1438,8 +1438,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146394}
-  m_LocalRotation: {x: .085249953, y: .0022100152, z: .0258208346, w: .996022522}
-  m_LocalPosition: {x: -.273000002, y: 1.00399995, z: .792999983}
+  m_LocalRotation: {x: .0385422707, y: .00777877076, z: .0285673104, w: .998818278}
+  m_LocalPosition: {x: .0349999666, y: .728999972, z: .805999756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479668}
@@ -1561,7 +1561,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153482}
-  m_LocalRotation: {x: -.674621582, y: .160353273, z: -.133393139, w: .708081067}
+  m_LocalRotation: {x: -.674621642, y: .160353288, z: -.133393154, w: .708081126}
   m_LocalPosition: {x: -.377416998, y: -.530473471, z: -.0134626897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1877,7 +1877,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00499999989, y: 1.051, z: .308999985}
+  m_LocalPosition: {x: .00499999989, y: 1.07299995, z: .303000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479668}
@@ -3882,7 +3882,7 @@ Light:
   m_Color: {r: 1, g: .999690533, b: .896247923, a: 1}
   m_Intensity: 1.5
   m_Range: 10
-  m_SpotAngle: 49
+  m_SpotAngle: 33.7000008
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
