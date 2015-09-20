@@ -22,6 +22,8 @@ public class PlayerManager : MonoBehaviour
 
     public AudioSource voiceOne;
     public AudioSource voiceTwo;
+    public AudioSource p1Shouting;
+    public AudioSource p2Shouting;
 
     // Use this for initialization
     void Awake ()
