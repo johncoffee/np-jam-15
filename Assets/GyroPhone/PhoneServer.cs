@@ -114,8 +114,10 @@ namespace VildNinja.GyroPhone
                     }
                     break;
                 case NetworkEventType.ConnectEvent:
+					Debug.Log("ConnectEvent");
                     break;
-                case NetworkEventType.DisconnectEvent:
+				case NetworkEventType.DisconnectEvent:
+					Debug.Log("DisconnectEvent");
                     break;
                 case NetworkEventType.Nothing:
                     break;
