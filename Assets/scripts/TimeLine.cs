@@ -3,9 +3,13 @@ using System.Collections;
 
 public class TimeLine : MonoBehaviour
 {
-    [HideInInspector]
-    public bool used;
-    public bool isPlayerOne;
+    public float delay;
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(delay);
+        Trigger();
+    }
 
     public virtual void Trigger()
     {
