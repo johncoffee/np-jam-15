@@ -15,16 +15,13 @@ public class PlayerManager : MonoBehaviour
 
     public Transform steering;
 
-    private Transform frontWheel;
+    public Transform frontWheel;
 
     public float steeringValue;
     public float steeringFactor;
 
-    public AudioSource myVoice;
-    public AudioSource otherVoice;
-
-    public List<TimeLine> playerOneTimeLine = new List<TimeLine>();
-    public List<TimeLine> playerTwoTimeLine = new List<TimeLine>();
+    public AudioSource voiceOne;
+    public AudioSource voiceTwo;
 
     // Use this for initialization
     void Awake ()
@@ -44,55 +41,39 @@ public class PlayerManager : MonoBehaviour
                 go.SetActive(false);
         }
     }
-	
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(10);
+
+        voiceOne.Play();
+        voiceTwo.Play();
+
+        voiceOne.volume = isPlayerOne ? 1 : 0;
+        voiceTwo.volume = isPlayerOne ? 0 : 1;
+    }
+
 	// Update is called once per frame
 	void Update ()
     {
-        if (steering != null)
+        if (steering != null && frontWheel != null)
         {
             float angle = Mathf.DeltaAngle(0, steering.eulerAngles.y) + Mathf.DeltaAngle(0, steering.eulerAngles.z);
             Debug.Log("STEERING " + angle);
             steeringValue = Mathf.Clamp(angle * steeringFactor, -1, 1);
+            frontWheel.localEulerAngles = new Vector3(0, steeringValue * 30, 0);
         }
+        
 
-	    foreach (var tl in (isPlayerOne ? playerOneTimeLine : playerTwoTimeLine))
-	    {
-	        if (!tl.used && tl.transform.localPosition.y < Time.timeSinceLevelLoad)
-	        {
-	            tl.used = true;
-                tl.Trigger();
-	        }
-	    }
-    }
-
-    [ContextMenu("TimeLine Setup")]
-    public void SetupTimeLines()
-    {
-        playerOneTimeLine = new List<TimeLine>();
-        playerTwoTimeLine = new List<TimeLine>();
-        foreach (var tl in FindObjectsOfType<TimeLine>())
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            (tl.isPlayerOne ? playerOneTimeLine : playerTwoTimeLine).Add(tl);
-            tl.transform.parent = transform;
-            var pos = tl.transform.localPosition;
-            pos.x = tl.isPlayerOne ? 0 : 20;
-            tl.transform.localPosition = pos;
+            voiceOne.volume = 1;
+            voiceTwo.volume = 0;
         }
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.matrix = transform.localToWorldMatrix;
-        for (int i = 0; i < 300; i += 10)
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Gizmos.color = i%60 == 0 ? Color.green : Color.yellow;
-            Gizmos.DrawRay(new Vector3(-5, i, 0), new Vector3(30, 0, 0));
+            voiceOne.volume = 0;
+            voiceTwo.volume = 1;
         }
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(Vector3.zero, new Vector3(0, 300, 0));
-        Gizmos.DrawRay(new Vector3(20, 0, 0), new Vector3(0, 300, 0));
-
-        Gizmos.DrawWireCube(new Vector3(10, Time.timeSinceLevelLoad, 0), new Vector3(32, 2, 0));
     }
 }

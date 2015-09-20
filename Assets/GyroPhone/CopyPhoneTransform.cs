@@ -25,8 +25,6 @@ namespace VildNinja.GyroPhone
         // Use this for initialization
         private void Start()
         {
-            server = FindObjectOfType<PhoneServer>();
-
             parent = new GameObject("Gyro " + number).transform;
             child = new GameObject("Local gyro").transform;
             child.parent = parent;
@@ -35,6 +33,14 @@ namespace VildNinja.GyroPhone
         // Update is called once per frame
         private void Update()
         {
+            if (server == null)
+            {
+                server = FindObjectOfType<PhoneServer>();
+
+                if (server == null)
+                    return;
+            }
+
             var data = server.phones[number];
 
             child.localRotation = data.gyroAttitude;

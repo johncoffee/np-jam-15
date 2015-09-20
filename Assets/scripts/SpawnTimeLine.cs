@@ -16,7 +16,7 @@ public class SpawnTimeLine : TimeLine
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere((bike != null ? bike.position : Vector3.zero) + offset, 1);
+        Gizmos.DrawWireSphere((bike != null ? bike.position : Vector3.zero) + offset, .2f);
         Gizmos.DrawLine(transform.position, (bike != null ? bike.position : Vector3.zero) + offset);
     }
 }
