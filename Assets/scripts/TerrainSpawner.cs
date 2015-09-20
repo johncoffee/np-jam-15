@@ -6,9 +6,9 @@ public class TerrainSpawner : MonoBehaviour {
 
 	public GameObject trackingTarget;
 
-	public int segmentsAhead = 4;
+	public int segmentsAhead = 2;
 
-	public float segmentLength = 2f;
+	public float segmentLength = -1f;
 
 	public GameObject segmentPrefab;
 
