@@ -125,6 +125,7 @@ GameObject:
   - 114: {fileID: 11409230}
   - 114: {fileID: 11467788}
   - 114: {fileID: 11404166}
+  - 81: {fileID: 8138102}
   m_Layer: 0
   m_Name: camera
   m_TagString: Untagged
@@ -1014,7 +1015,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.01999998}
+  m_LocalPosition: {x: -.810000002, y: .54400003, z: -2.01999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479668}
@@ -3027,6 +3028,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199408}
   m_Mesh: {fileID: 4300046, guid: 20cd9b3f7336246048427682b7fea098, type: 3}
+--- !u!81 &8138102
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120984}
+  m_Enabled: 1
 --- !u!108 &10822550
 Light:
   m_ObjectHideFlags: 1
@@ -3039,7 +3047,7 @@ Light:
   m_Color: {r: 1, g: .999690533, b: .896247923, a: 1}
   m_Intensity: 2.79999995
   m_Range: 10
-  m_SpotAngle: 28
+  m_SpotAngle: 49
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -3134,11 +3142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8c33285a82a458caae4d516278ca71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: {x: 0, y: 0, z: 0}
+  vel: {x: 0, y: 0, z: 10}
   acc: {x: 0, y: 0, z: 0}
   leftRight: 5
-  max0: -1
-  max1: 1
+  max0: -.699999988
+  max1: .170000002
   bikeBase: {fileID: 147054}
 --- !u!114 &11467788
 MonoBehaviour:
