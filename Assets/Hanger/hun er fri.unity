@@ -1927,7 +1927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boidPrefab: {fileID: 159178, guid: 664f9b61bf7cf484a80a8514d367958c, type: 2}
   anchor: {x: 0, y: 0, z: 0}
-  spawnSphere: 50
+  spawnSphere: 100
   worldSphere: 150
   maxSpeed: 8
   cohesionRadius: 5
@@ -1937,7 +1937,7 @@ MonoBehaviour:
   alignmentCoefficient: 5
   separationCoefficient: 10
   simulationPercent: .00999999978
-  swarmCount: 300
+  swarmCount: 200
 --- !u!4 &1901060442
 Transform:
   m_ObjectHideFlags: 0
@@ -2040,7 +2040,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454934, guid: 664f9b61bf7cf484a80a8514d367958c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -104
       objectReference: {fileID: 0}
     - target: {fileID: 454934, guid: 664f9b61bf7cf484a80a8514d367958c, type: 2}
       propertyPath: m_LocalRotation.x
